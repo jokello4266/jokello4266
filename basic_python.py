@@ -34,6 +34,12 @@ people=int(input("How many people are going to spit the bill? "))
 total_Calculated_tip= (bill * float(tip / 100))
 tip_per_person = (float(total_Calculated_tip / people))
 tip_per_person_rounded =round(tip_per_person, 2)
-
-print(f"The tip each person is going to pay is ${tip_per_person_rounded} ")
+total_tip= float(tip_per_person_rounded * people)
+total_tip_rounded=round(total_tip, 2)
+total_amount=(bill + total_tip)
+total_amount_rounded= round(total_amount, 2)
+total_amount_per_person=total_amount / people
+total_amount_per_person_rounded=round(total_amount_per_person, 2)
+                              
+print(f"The total amount to be paid is ${total_amount_rounded}, the total tip is ${total_tip_rounded}, the total amount per person ${total_amount_per_person_rounded} and the total tip per person in ${tip_per_person_rounded} ")
 
