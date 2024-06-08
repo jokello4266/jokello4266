@@ -12,19 +12,19 @@ else:
 
 # nested statements 
 
-print("Welccome to the rollercoaster! ")
+print("Welcome to the rollercoaster! ")
 height=input("Enter your height: ")
 height_as_int=int(height)
 age=input("what is your age? ")
 age_as_int=int(age)
 
 if height_as_int>= 120:
-    print("You ride the rollercoaster")
-elif age_as_int< 12:
-    print("Please pay $5, ")
-elif age_as_int<= 18:
-    print("Please pay $ 7. ")
-elif age_as_int > 18:
-    print("Please print $ 12.")
+    print("You can ride the rollercoaster.")
+    if age_as_int < 12:
+        print("Please pay $5, ")
+    elif age_as_int <= 18:
+        print("Please pay $7. ")
+    else:
+        print("Please Pay $12. ")
 else:
-    print("Sorry you cannot ride the rollercoaster")
+    print("Sorry you cannot ride the rollercoaster.")
