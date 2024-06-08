@@ -14,15 +14,17 @@ else:
 
 print("Welccome to the rollercoaster! ")
 height=input("Enter your height: ")
+height_as_int=int(height)
 age=input("what is your age? ")
+age_as_int=int(age)
 
-if height >= 120:
+if height_as_int>= 120:
     print("You ride the rollercoaster")
-elif age < 12:
+elif age_as_int< 12:
     print("Please pay $5, ")
-elif age <= 18:
+elif age_as_int<= 18:
     print("Please pay $ 7. ")
-elif age > 18:
+elif age_as_int > 18:
     print("Please print $ 12.")
 else:
     print("Sorry you cannot ride the rollercoaster")
